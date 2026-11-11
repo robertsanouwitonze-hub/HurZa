@@ -15,6 +15,32 @@
   --border: #e5ebe6;
   --shadow: 0 12px 35px rgba(15, 65, 45, 0.09);
 }
+.menu-toggle {
+  display: none;
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+@media (max-width: 650px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
 
 * {
   margin: 0;
